@@ -1,0 +1,26 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mocha": "^10.0.0",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.6",
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
+  }
+}
