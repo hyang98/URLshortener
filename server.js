@@ -32,40 +32,6 @@ app.get('/:shortUrl', async (req, res) =>
   res.redirect(longUrl);
 })
 
-/*
-function encode() 
-{
-  app.post('/shortUrls', async (req, res) => 
-  {
-    await ShortUrl.create({ full: req.body.fullUrl });
-    res.redirect('/');
-  })
-}
-
-
-function decode() 
-{
-  app.get('/:shortUrl', async (req, res) => 
-  {
-    const shortUrl = await ShortUrl.findOne({ short: res.params.shortUrl });
-    if (shortUrl == null)
-    {
-      return res.sendStatus(404);
-    } 
-  
-    shortUrl.clicks++;
-    shortUrl.save();
-  
-    req.redirect(shortUrl.full);
-  })
-}
-
-module.exports = { encode, decode };
-
-encode();
-decode();
-*/
-
 module.exports = GlobalUrlMap;
 
 app.listen(process.env.PORT || 5000);
